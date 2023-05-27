@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe: Player vs Computer</title>
+</head> 
+
+<body>
+    <header>
+        <div class="title">#Tic-Tac-Toe</div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="game-main">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+            </div>
+            <div class="infoturn">Turn: Player 1</div>
+        </div>
+    <div class="rightCont">
+        <div class="right">
+            <div class="optionCont">
+          <a href="player.html"><button id="options" style="cursor:pointer"> Player vs Computer</button></a></div>
+            <div class="game-info">
+                <div class="info">Player 1: O <br>  Computer: X <br>
+                </div>
+                
+                <div class="scoretitle">Score</div>
+                <div class="score"><div>
+                        Player 1: <span id="player1-score">0</span> <br>
+                        Computer: <span id="player2-score">0</span>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+    </main>
+    <div class="reset">
+        <button id="reset">Reset</button>
+    </div>
+    <script src="computer.js"></script>
+</body>
+
+</html>

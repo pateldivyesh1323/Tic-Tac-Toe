@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    height:100px;
+    z-index: 10;
+
+}
+.optionCont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#options{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    margin: 15px;
+    padding: 30px;
+
+}
+.title{
+    display: inline;
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+}   
+.game-main{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.899);
+    height: 450px;
+    width: 450px;
+    row-gap: 10px;
+    column-gap: 10px; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: auto;
+    font-family:'Mali', cursive;
+}
+.box{
+    color: rgba(0, 0, 0, 0.899);
+    background-color: white;
+    font-size: 100px;
+    font-weight: lighter;   
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgba(255, 255, 255, 0.919);
+    cursor: pointer;
+}
+.game-info{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 50vw;
+}
+.rightCont{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.right{
+    width: 25vw;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+}
+#reset{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    height: 37px;
+    width: 85px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#reset:hover{
+    background-color: rgba(0, 0, 0, 0.718);
+    cursor: pointer;
+}
+.scoretitle{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.score{
+    display: flex ;
+    justify-content:center; 
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.infoturn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pop{
+    animation-name: pop;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+}
+
+/* Adding Animations */
+@keyframes pop{
+    from{
+        opacity: 0.4;
+        font-size: 80px;
+    }
+    to{
+        opacity: 1;
+        font-size: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        height: 69px;;
+        z-index: 10;
+    }
+    .title{
+        display: inline;
+        color: white;
+        font-size: 43px;
+        font-weight:bolder;
+    } 
+    .game-main{
+        height: 360px;
+        width: 360px;
+        row-gap: 7px;
+        column-gap: 7px; 
+    }
+    .box{
+        font-size: 70px;
+    }
+    .pop{
+        animation-name: pop;
+        animation-duration: 0.25s;
+        animation-timing-function: ease-out;
+    }
+
+    .game-info{
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .right{
+        width: 25vw;
+    }
+    .rightCont{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    @keyframes pop{
+        from{
+            opacity: 0.4;
+            font-size: 50px;
+        }
+        to{
+            opacity: 1;
+            font-size: 70px;
+        }
+    }
+
+  }
+
+  @media only screen and (max-width: 700px)
+  {
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 60px;;
+        }
+        .title{
+            font-size: 30px;
+        } 
+        .game-main{
+            height: 250px;
+            width: 250px;
+            row-gap: 7px;
+            column-gap: 7px; 
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100vw;
+        }
+        .rightCont{
+            width: 100vw;
+        }
+        main{
+            margin: 0px;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        .box{
+            font-size: 50px;
+        }
+        .pop{
+            animation-name: pop;
+            animation-duration: 0.25s;
+            animation-timing-function: ease-out;
+        }
+        .reset{
+            position: relative;
+            top: 50px;
+        }
+        .infoturn{
+            font-size:28px ;
+        }
+    
+        .game-info{
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .right{
+            width: 70vw;
+        }
+        .rightCont{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 40px;
+        }
+    
+        @keyframes pop{
+            from{
+                opacity: 0.4;
+                font-size: 30px;
+            }
+            to{
+                opacity: 1;
+                font-size: 50px;
+            }
+        }
+    
+  }
+  
